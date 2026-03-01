@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0" />
+  <title>GameHub | Play Multiple Games Online</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans‑serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #805454;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #BD9B9B;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #BD9B9B;
+    }
+
+	.hero { text-align: center; padding: 4rem 2rem;
+ 	background-image: url("backgrount1 .png"); 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+}   
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #453B3B;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .btn {
+      display: inline‑block;
+      padding: 0.8rem 2rem;
+      background: #00d1ff;
+      color: #000;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00a5c9;
+    }
+
+    .games {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .games h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .game‑cards {
+      display: flex;
+      flex‑wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      width: 280px;
+      background: #181818;
+      border‑radius: 8px;
+      overflow: hidden;
+      box‑shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object‑fit: cover;
+    }
+
+    .card‑body {
+      padding: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #080808;
+      border‑top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max‑width: 768px) {
+      header {
+        flex‑direction: column;
+        gap: 0.8rem;
+      }
+      .hero h1 {
+        font‑size: 2.2rem;
+      }
+      .card {
+        width: 100%;
+        max‑width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      Game<span style="color:#00d1ff;">Hub</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to GameHub</h1>
+    <p>Play multiple games online, anytime and anywhere. Simple, fast, and fun.</p>
+    <a href="#games" class="btn">Browse Games</a>
+  </section>
+
+  <section class="games" id="games">
+    <h2>Our Games</h2>
+    <div class="game‑cards">
+      <!-- Game 1 -->
+      <div class="card">
+        <img src="C:\Users\acer\Desktop\PROJECT\snake.jpg" alt="Game 1" />
+        <div class="card‑body">
+          <h3>SANKER</h3>
+          <p>GAME WAS TOO HARD TO PLAY </p>
+          <a href="PAGE 2.html" class="btn">Play</a>
+        </div>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="card">
+        <img src="C:\Users\acer\Desktop\PROJECT\shooter.jpg" alt="Game 2" />
+        <div class="card‑body">
+          <h3> SOLO SHOTER</h3>
+          <p>Shot the peaple with out gult</p>
+          <a href="PAGE 3.html" class="btn">Play</a>
+        </div>
+      </div>
+
+      <!-- Game 3 -->
+      <div class="card">
+        <img src="C:\Users\acer\Desktop\PROJECT\fighter.jpg" alt="Game 3" />
+        <div class="card‑body">
+          <h3>FIGHTER</h3>
+          <p>Fight with space alien enemies.</p>
+          <a href="PAGE 4.html" class="btn">Play</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2026 GameHub. All rights reserved.</p>
+    <p>Contact: <a href="mailto:info@gamehub.com" style="color:#00d1ff;">info@gamehub.com</a></p>
+  </footer>
+</body>
+</html>
